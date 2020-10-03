@@ -3,7 +3,7 @@ const cors = require('cors')
 const connectToMongoDB = require('./database/mongoDbConnection')
 const routes = require('./routes/routes')
 
-const PORT = process.env.LOCAL_PORT
+const PORT = process.env.LOCAL_PORT || process.env.PORT
 
 const app = express()
 
